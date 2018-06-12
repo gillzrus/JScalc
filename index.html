@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'content='width=device-width, initial-scale=1'>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js">  </script>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <title>JS Calculator</title>
+
+</head>
+<body>
+  <div class='calculator'>
+    <p id='title'><strong>CALCULATOR</strong></p>
+    <div id='screen'>
+    <p id='stored'>0</p>
+    </div>
+    <button id='clearbtn' class='operators' onclick='clearScreen()'>AC</button>
+    <button id='reverse' class='controls' onclick='reverse()'>&plusmn;</button>
+    <button id='ansbtn' class='controls' value='ans' onclick='ans()'>ANS</button>
+    <button id='delbtn' class='numbers' value='?' onclick='delValue()'>DEL</button>
+    <button id='powerbtn' class='operators' value='**'  onclick='addOperator(this)'>^</button>
+    <button id='rootbtn' class='operators' value='?'  onclick='sqRoot()'>√</button>
+    <button id='remainderbtn' class='operators' value='%' onclick='addOperator(this)'>%</button>
+    <button id='plusbtn' class='operators' value='+' onclick='addValue(this)'>+</button>
+    <button id='7btn' class='numbers' value='7' onclick='addValue(this)'>7</button>
+    <button id='8btn' class='numbers' value='8' onclick='addValue(this)'>8</button>
+    <button id='9btn' class='numbers' value='9' onclick='addValue(this)'>9</button>
+    <button id='minusbtn' class='operators' value='-' onclick='addOperator(this)'>-</button>
+    <button id='4btn' class='numbers' value='4' onclick='addValue(this)'>4</button>
+    <button id='5btn' class='numbers' value='5' onclick='addValue(this)'>5</button>
+    <button id='6btn' class='numbers' value='6' onclick='addValue(this)'>6</button>
+    <button id='multiplybtn' class='operators' value='*'  onclick='addOperator(this)'>x</button>
+    <button id='1btn' class='numbers' value='1' onclick='addValue(this)'>1</button>
+    <button id='2btn' class='numbers' value='2' onclick='addValue(this)'>2</button>
+    <button id='3btn' class='numbers' value='3' onclick='addValue(this)'>3</button>
+    <button id='dividebtn' class='operators' value='/' onclick='addOperator(this)'>&divide;</button>
+    <button id='0btn' class='numbers' value='0' onclick='addValue(this)'>0</button>
+    <button id='decimalbtn' class='numbers' value='.' onclick='addValue(this)'>.</button>
+    <button id='mysterybtn' class='numbers' value='?' onclick='tests()'>?</button>
+    <button id='equalsbtn' class='operators' value='=' onclick='equals()'>=</button>
+  </div>
+</body>
+</html>
