@@ -105,4 +105,7 @@ button:active {
 #equalbtn {
   width: 150px;
   height: 70px;
+  border-color: #666;
+  background-color: #666;
+  color: white;
 }
